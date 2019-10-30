@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/natplusultra/liri-node-app.git"
+    "url": "git+https://ermiaswoldetsadik.github.io/liri-node-app/."
   },
-  "author": "natplusultra",
+  "author": "ermiaswoldetsadik",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/natplusultra/liri-node-app/issues"
+    "url": "https://ermiaswoldetsadik.github.io/liri-node-app/."
   },
-  "homepage": "https://github.com/natplusultra/liri-node-app#readme",
+  "homepage": "https://ermiaswoldetsadik.github.io/liri-node-app/.#readme",
   "dependencies": {
     "node-spotify-api": "^1.0.7",
     "request": "^2.83.0",
