@@ -1,0 +1,63 @@
+﻿PS C:\Users\ermov\gtcoding\liri-node-app> node .\liri.js spotify-this-song akon
+this is loaded
+
+Searching for:  akon
+
+
+THE SONG YOU REQUESTED:
+
+Artist: Akon
+Song:  akon
+Album: Konvicted
+Preview link: https://open.spotify.com/artist/0z4gvV4rjIZ9wHck67ucSV
+---------------
+
+PS C:\Users\ermov\gtcoding\liri-node-app> node .\liri.js movie-this matrix
+this is loaded
+
+Searching for:  matrix
+
+http://www.omdbapi.com/?t= matrix&y=&plot=short&apikey=40e9cece
+
+THE MOVIE YOU REQUESTED:
+
+Title: The Matrix
+Year: 1999
+IMDB Rating: 8.7
+Country: USA
+Language: English
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role
+in the war against its controllers.
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+---------------
+
+
+THE MOVIE YOU REQUESTED:
+
+Title: undefined
+Year: undefined
+IMDB Rating: undefined
+Country: undefined
+Language: undefined
+Plot: undefined
+Actors: undefined
+---------------
+
+THE MOVIE YOU REQUESTED:
+
+Title: The Lord of the Rings: The Fellowship of the Ring
+Year: 2001
+IMDB Rating: 8.8
+Country: New Zealand, USA
+Language: English, Sindarin
+Plot: A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.
+Actors: Alan Howard, Noel Appleby, Sean Astin, Sala Baker
+---------------
+
+THE SONG YOU REQUESTED:
+
+Artist: Seal
+Song:  seal
+Album: Seal [1994]
+Preview link: https://open.spotify.com/artist/5GtMEZEeFFsuHY8ad4kOxv
+---------------

@@ -1,7 +1,6 @@
 // dependencies
 var fs = require("fs");
 var request = require("request");
-var twitter = require("twitter"); 
 var spotifyAPI = require("node-spotify-api");
 var keys = require("./keys.js");
 
@@ -21,41 +20,6 @@ function storeInput() {
 	}
 
 	console.log("Searching for: " + userInput +"\n");
-}
-
-// function to call and return tweets
-function myTweets() {
-	var client = new twitter(keys.twitterKeys);
-
-	var params = {screen_name: "ecstatictruths"};
-
-	client.get("statuses/user_timeline", params, function(error, tweets, response) {
-		if (error) {
-			return console.log(error);
-		}
-		// console.log(JSON.stringify(tweets, null, 2));
-
-		console.log("\nHERE ARE THE LAST 20 TWEETS:\n\n");
-		fs.appendFile("log.txt", "\nHERE ARE THE LAST 20 TWEETS:\n\n", function(err) {
-			if (err) {
-				console.log(err);
-			}
-		});
-
-		// loops through the returned tweets object and console.logs the most recent 20 tweets and when they were tweeted
-		for (var i = 0; i < 20; i++) {
-			// logs to the terminal
-			console.log(tweets[i].text + "\nTweeted on: " + tweets[i].created_at + "\n---------------\n");
-
-			// logs to the log.txt file
-			fs.appendFile("log.txt", tweets[i].text + "\nTweeted on: " + tweets[i].created_at + "\n---------------\n", function(err) {
-				
-				if (err) {
-					console.log(err);
-				} 
-			});
-		}
-	});
 }
 
 // function to call and return user's provided song
@@ -146,10 +110,7 @@ function doWhatItSays() {
 
 		// determines which function and query to run 
 		switch (command) {
-			case "my-tweets":
-			myTweets();
-			break;
-
+			
 			case "spotify-this-song":
 			spotifyThisSong();
 			break;
@@ -163,10 +124,7 @@ function doWhatItSays() {
 
 // a switch-case statement that will determine which function to run
 switch (command) {
-	case "my-tweets":
-	myTweets();
-	break;
-
+	
 	case "spotify-this-song":
 	spotifyThisSong();
 	break;
